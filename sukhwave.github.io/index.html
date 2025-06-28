@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scripts/jquery.js" defer></script>
+  <script src="scripts/app.js" defer></script>
+  <link rel="stylesheet" href="css/app.css">
+  <title>6th Javascript Assignment &hearts;</title>
+</head>
+<body>
+
+  <div id="logo">
+    <a href="#">
+      <img src="assets/images/logo.png" alt="logo">
+    </a>
+    <img src="assets/images/codepen-64.png" alt="codepen" class="socialIcon">
+    <img src="assets/images/linkedin-64.png" alt="linkedIn" class="socialIcon">
+    <img src="assets/images/twitter-64.png" alt="twitter" class="socialIcon">
+  </div>
+
+  <div id="hamburger" onclick="toggleMenu();">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div id="menu">
+    <a href="#about" title="about" onclick="toggleMenu();">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#fff"><path d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"/></svg>      
+      About
+    </a>
+    <a href="#samples" title="samples" onclick="toggleMenu();">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#fff"><path d="M350-384.67h394l-130.67-174-99.33 130-66-84.66-98 128.66Zm-70 171.34q-27 0-46.83-19.84Q213.33-253 213.33-280v-533.33q0-27 19.84-46.84Q253-880 280-880h533.33q27 0 46.84 19.83Q880-840.33 880-813.33V-280q0 27-19.83 46.83-19.84 19.84-46.84 19.84H280Zm0-66.67h533.33v-533.33H280V-280ZM146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-600h66.67v600h600V-80h-600ZM280-813.33V-280v-533.33Z"/></svg>      
+      Samples
+    </a>
+    <a href="#skills" title="skills" onclick="toggleMenu();">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#fff"><path d="m486.67-80-20-398.67-146-48H40v-66.66h242l276.67-198 43.33 51-154.67 111L550-606.67 880.67-800 920-753.33 576-498 553.33-80h-66.66ZM240.05-644.67q-31.05 0-53.22-22.11-22.16-22.11-22.16-53.17 0-31.05 22.11-53.22 22.11-22.16 53.17-22.16 31.05 0 53.22 22.11 22.16 22.11 22.16 53.17 0 31.05-22.11 53.22-22.11 22.16-53.17 22.16Z"/></svg>      
+      Skills
+    </a>
+    <a href="#contact" title="contact" onclick="toggleMenu();">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#fff"><path d="M240-253.33q-27 0-46.83-20.17-19.84-20.17-19.84-46.5v-453.33q0-27 19.84-46.84Q213-840 240-840h613.33q27 0 46.84 19.83Q920-800.33 920-773.33V-320q0 26.33-19.83 46.5-19.84 20.17-46.84 20.17H240Zm306.67-196L240-691.67V-320h613.33v-371.67L546.67-449.33Zm0-85.34L850-773.33H243.33l303.34 238.66ZM106.67-120q-27 0-46.84-20.17Q40-160.33 40-186.67V-726h66.67v539.33h700V-120h-700Zm746.66-572.67v-80.66H240v80.66-80.66h613.33v80.66Z"/></svg>      
+      Contact
+    </a>
+  </div>
+
+  <header>
+    <div class="matrix-grid" id="matrixGrid"></div>
+    <div class="header-text">
+      <h1><span class="rotating-text">Web Developer</span></h1>
+    </div>
+  </header>
+  <div id="main">
+    <section id="about">
+      <h1>About Me:</h1>
+      <br>
+      <p>I am currently studying Web Development at triOS College, with a diverse academic background that includes a Bachelor’s in Commerce (Accounting), Diplomas in Aviation and Software from India, and a degree in Service, Hospitality, and Tourism Management from Denmark. This blend of education gives me a unique perspective as I transition into the tech world, where I am eager to learn and grow.</p>
+      <p>Outside of my studies, I am passionate about music, whether singing or listening. I believe creativity is key in any field, and I am excited to bring that passion into technology. With a strong foundation and a commitment to learning, I look forward to making my mark in the tech industry.</p>
+    </section>
+    <section id="samples">
+      <h1>My Work Samples</h1>
+        <div class="carousel">
+          <button>&#10094;</button>
+          <div class="carousel-track">
+            <img src="assets/images/pic1.png" class="thumbs" alt="Sample 1">
+            <img src="assets/images/pic2.png" class="thumbs" alt="Sample 2">
+            <img src="assets/images/pic3.png" class="thumbs" alt="Sample 3">
+            <img src="assets/images/pic4.png" class="thumbs" alt="Sample 4">
+          </div>
+          <button>&#10095;</button>
+        </div>
+      </section>
+    <section id="skills">
+      <h1>Languages and Tools</h1>
+      <div class="skills-badges">
+        <span class="badge">Swift</span>
+        <span class="badge">Java</span>
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">C#</span>
+        <span class="badge">C++</span>
+        <span class="badge">React</span>
+        <span class="badge">Git</span>
+        <span class="badge">GitHub</span>
+        <span class="badge">XCode</span>
+        <span class="badge">Angular</span>
+        <span class="badge">SQL</span>
+        <span class="badge">Adobe XD</span>
+      </div>
+    </section>
+  </div>
+  <section id="contact">
+    <h1>Contact Me</h1>
+    <form class="contact-form" action="mailto:your@email.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  <footer>
+    &copy;2025 SK Creations, all rights reserved. 
+  </footer>
+
+</body>
+</html>
